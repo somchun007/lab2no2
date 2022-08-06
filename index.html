@@ -12,11 +12,11 @@
         <fieldset>
             <legend>ข้อมูลทั่วไป</legend>
             <label for="name">ชื่อ-สกุล: </label> <br>
-            <input type="text" name="name" id="name" placeholder="กรอกชื่อ-สกุล" pattern=".{1,}"> <b>*</b> <br>
+            <input type="text" name="name" id="name" placeholder="กรอกชื่อ-สกุล" pattern="[A-Za-zก-๏\s]+" required> <b>*</b> <br>
             <label for="email">Email: </label> <br>
-            <input type="email" name="email" id="email" pattern=".{1,}"> <b>*</b> <br>
+            <input type="email" name="email" id="email" pattern=".{1,}" required> <b>*</b> <br>
             <label for="phone">โทรศัพท์: </label> <br>
-            <input type="text" name="phone" id="phone" value="+66" pattern="[\+0-9]{12}"> <b>*</b> <br>
+            <input type="text" name="phone" id="phone" value="+66" pattern="[\+0-9]{12}" required> <b>*</b> <br>
             <label for="place">ที่อยู่: </label> <br>
             <textarea rows="4" cols="40"> </textarea> <br>
             <label for="code">รหัสไปรษณีย์: </label>
