@@ -20,7 +20,7 @@
             <label for="place">ที่อยู่: </label> <br>
             <textarea rows="4" cols="40"> </textarea> <br>
             <label for="code">รหัสไปรษณีย์: </label>
-            <input type="text" name="้code" id="code" size="4"> <br>  <!-- ตัวเลข5ตัว-->
+            <input type="text" name="้code" id="code" size="4" pattern="[0-9]{5}"> <br>  <!-- ตัวเลข5ตัว-->
             <label for="img">รูปผู้จอง: </label>
             <input type="file" id="img" name="img" accept="image/png, image/jpeg">
         </fieldset>
@@ -29,11 +29,11 @@
         <fieldset>
             <legend>ข้อมูลเข้าสู่ระบบ</legend>
             <label for="username">Username: </label> <br>
-            <input type="text" name="username" id="username" > <br>
+            <input type="text" name="username" id="username" pattern="[0-9a-zA-Z_].{7,}"> <br>
             <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</i> <br>
             <br>
-            <label for="password">Password: </label> <br>
-            <input type="text" name="password" id="password" > <br>
+            <label for="pword">Password: </label> <br>
+            <input type="password" name="pword" id="pword" pattern=".{8,}"> <br>
             <i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i>
         </fieldset>
         <br>
@@ -53,7 +53,7 @@
             <label for="start">วันที่เดินทาง: </label>
             <input type="date" name="start" id="start"> <br>
             <label for="passenger">จำนวนผู้เดินทาง: </label>
-            <input type="text" name="passenger" id="passenger" size="2" pattern="[1-9]"> <br> <!-- 1-10-->
+            <input type="text" name="passenger" id="passenger" size="2" pattern="([1-9]|10)"> <br> <!-- 1-10-->
             <label for="go">เน้นการท่องเที่ยวแบบใด?</label> <br>
             <input type="checkbox" name="go" id="go">ชอปปิ้ง <br>
             <input type="checkbox" name="go" id="go">ธรรมชาติ <br>
